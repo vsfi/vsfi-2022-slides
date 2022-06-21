@@ -1,0 +1,21 @@
+= VSFI Slides
+
+В качестве основы для слайдов используется https://docs.asciidoctor.org/reveal.js-converter/latest/
+
+Конвертер позволяет писать презы с помощью asciidoc и конвертировать их сразу в reveal.js презы
+
+== Сборка
+```
+npm install
+cd <your-folder-with-adoc>
+npx asciidoctor-revealjs presentation.adoc
+```
+
+Готовый html будет в той же папке
+
+== Написание презы
+Примеры есть в документации плагина а также в репозитории
+https://github.com/inponomarev/csa-hb
+
+Для того чтобы сделать свою презу с темой VSFI нужно скопировать заголовок из тестовой презентации hello-world
+
