@@ -9,6 +9,10 @@
 npm install
 cd <your-folder-with-adoc>
 npx asciidoctor-revealjs presentation.adoc
+
+# or
+make prepare
+make build
 ```
 
 Готовый html будет в той же папке
