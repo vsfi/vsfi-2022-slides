@@ -1,0 +1,10 @@
+:revealjsdir: ../../node_modules/reveal.js
+:revealjs_customtheme: ../../theme/vsfi.css
+
+
+= Виртуальные машины и контейнеры
+
+== Матанализ это
+* Хорошо
+* Плохо
+* Нормально
