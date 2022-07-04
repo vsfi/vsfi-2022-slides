@@ -6,7 +6,70 @@
 
 Сергей Ларченко
 
-== Матанализ это
-* Хорошо
-* Плохо
-* Нормально
+== Возможности
+
+== Плюсы и минусы
+
+=== Плюсы
+
+* Простота использования
+* Написано на Python
+* Без агентная модель
+* Простой DSL на базе YAML
+* Большой набор готовых ролей (Ansible Galaxy)
+
+=== Минусы
+
+- CLI only
+- Нет понятия состояния
+- Слабая поддержка Windows
+
+
+== Inventory
+
+* группы
+* переменные
+* вложенные группы
+
+=== Формат хранения
+
+* ini
+* yaml
+* динамический
+
+=== INI формат
+
+```ini
+[global_server]
+example.com hostname=example.com
+
+[local_server]
+mail hostname=mail.corp
+
+[servers:children]
+global_server
+local_server
+
+```
+
+=== YAML формат
+
+```yaml
+global_server:
+  hosts:
+    example.com:
+      hostname: example.com
+
+local_server:
+  hosts:
+    mail:
+      hostname: mail.corp
+servers:
+  children:
+    global_server:
+    local_server:
+```
+
+== Playbooks
+
+== Роли
