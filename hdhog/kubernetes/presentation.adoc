@@ -233,6 +233,13 @@ One CronJob object is like one line of a crontab (cron table) file. It runs a jo
 
 Создает Job по расписанию.
 
+== Инструменты деплоя в Kubernetes
+
+- helm
+- kubectl
+- argocd
+- fluxcd
+ 
 == Дистрибутивы
 
 - deckhouse
@@ -242,3 +249,4 @@ One CronJob object is like one line of a crontab (cron table) file. It runs a jo
 - minikube
 - rancher
 - talos
+- OpenShift
