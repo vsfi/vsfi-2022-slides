@@ -198,6 +198,40 @@ A ReplicaSet's purpose is to maintain a stable set of replica Pods running at an
 - Следить что бы все реплики были запущены
 
 === StatefulSets
+[.notes]
+--
+StatefulSet is the workload API object used to manage stateful applications.
+--
+- Стабильные, уникальные сетевые идентификаторы.
+- Стабильное, постоянное хранилище.
+- Упорядоченное, изящное развертывание и масштабирование.
+- Упорядоченные автоматические скользящие обновления.
+
+=== DaemonSet
+[.notes]
+--
+A DaemonSet ensures that all (or some) Nodes run a copy of a Pod. As nodes are added to the cluster, Pods are added to them. As nodes are removed from the cluster, those Pods are garbage collected. Deleting a DaemonSet will clean up the Pods it created.
+--
+
+Запускает копии пода на каждой ноде кластера
+
+=== Job
+[.notes]
+--
+A Job creates one or more Pods and will continue to retry execution of the Pods until a specified number of them successfully terminate. As pods successfully complete, the Job tracks the successful completions. When a specified number of successful completions is reached, the task (ie, Job) is complete. Deleting a Job will clean up the Pods it created. Suspending a Job will delete its active Pods until the Job is resumed again.
+--
+
+Запускет под который выполняет задачу и останавливается
+
+=== CronJob
+[.notes]
+--
+A CronJob creates Jobs on a repeating schedule.
+
+One CronJob object is like one line of a crontab (cron table) file. It runs a job periodically on a given schedule, written in Cron format.
+--
+
+Создает Job по расписанию.
 
 == Дистрибутивы
 
