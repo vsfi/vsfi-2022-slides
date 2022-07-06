@@ -23,3 +23,5 @@ https://github.com/inponomarev/csa-hb
 
 Для того чтобы сделать свою презу с темой VSFI нужно скопировать заголовок из тестовой презентации hello-world
 
+== Сылки
+. https://docs.google.com/spreadsheets/d/1D6Pvu6oQrB-JpL8GuEYE6mSSwWxzR45c_pNiisQydNA/edit#gid=1315416040[расписание]
