@@ -23,3 +23,11 @@ https://github.com/inponomarev/csa-hb
 
 Для того чтобы сделать свою презу с темой VSFI нужно скопировать заголовок из тестовой презентации hello-world
 
+== Docker image
+Собираем докер образ, заходим в контейнер, конвертируем в презу
+```
+docker build -t vsfi-slides . 
+docker run -ti --rm -v (pwd):/app vsfi-slides bash
+cd /app && npx asciidoctor-revealjs <file_name>.adoc
+```
+
